@@ -24,16 +24,21 @@ function mostrarProductos(){
 
     let btnStock = document.getElementById(`btnStock${elemento.id}`)
     let btnElimina = document.getElementById(`btnElimina${elemento.id}`)
+ 
+     /*  btnStock.addEventListener('click',()=>{
+        let newStock = parseInt(prompt("ingrese el stock para agregar"))
+        let stockFinal = newStock + elemento.stock
 
-      btnStock.addEventListener('click',()=>{
-       console.log(elemento.id); 
+         }) */
 
-         })
+     /* btnElimina.addEventListener('click',()=>{
+        btnElimina.parentElement.remove()
+     }) */
 
     }) 
 
-    
 
 }
+
 
 
