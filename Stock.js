@@ -1,18 +1,4 @@
-/* 
-btnAgrega.addEventListener('click',()=>{
 
-
-    let material = prompt("ingrese el material") 
-    let medida = prompt("ingrese la medida")
-    let espesor = parseInt(prompt("ingrese el espesor"))
-    let peso = parseInt(prompt("ingrese el peso"))
-    let valor = parseInt(prompt("ingrese el valor"))
-    let stock = parseInt(prompt("ingrese el stock"))
-    stockProductos.push new objet (material,medida,espesor,peso,valor,stock)
-
-    mostrarProductos(stockProductos)
-
-}) */
 
 let stockProductos = [
     {id:1, material: "Galvanizado" , medida: "2000x1000", espesor:2, peso: 30, valor: 50, stock: 226},
@@ -23,6 +9,34 @@ let stockProductos = [
     {id:6, material: "Laton" , medida: "2000x1000", espesor:1.5, peso: 24, valor: 43, stock: 37},
     
 ]
+
+
+btnAgrega.addEventListener('click',()=>{
+
+    stockProductos.push ({
+        id: parseInt(Math.random() * 100),
+        material: prompt("ingrese el material"),
+        medida: prompt("ingrese la medida"),
+        espesor: parseInt(prompt("ingrese el espesor")),
+        peso: parseInt(prompt("ingrese el peso")),
+        valor: parseInt(prompt("ingrese el valor")),
+        stock:parseInt(prompt("ingrese el stock"))
+    }) 
+    
+    
+ filas.innerHTML= ""
+ mostrarProductos(stockProductos)
+
+    
+})
+
+
+
+
+
+
+
+
 
 
 
